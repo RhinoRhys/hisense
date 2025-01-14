@@ -22,7 +22,7 @@ class Bridge(hisense.TVAuthenticator):
                  f"remote_username {self.username}",
                  f"remote_passwd {self.password}"]
         
-        with open("output.conf", 'w') as file:
+        with open(bridgefile, 'w') as file:
             file.write("\n".join(lines))
         
     
