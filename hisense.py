@@ -15,12 +15,12 @@ import random
 script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 # Configuration
-tv_ip = "192.168.178.134"
+tv_ip = "192.168.1.3"
 random_mac = True # Set to False if you want to use a specific MAC address
-# certfile = os.path.join(script_directory, "./rcm_certchain_pem.cer")
-# keyfile = os.path.join(script_directory, "./rcm_pem_privkey.pkcs8")
-certfile = os.path.join(script_directory, "./vidaa_cert.cer")
-keyfile = os.path.join(script_directory, "./vidaa_cert.pkcs8")
+certfile = os.path.join(script_directory, "./rcm_certchain_pem.cer")
+keyfile = os.path.join(script_directory, "./rcm_pem_privkey.pkcs8")
+#certfile = os.path.join(script_directory, "./vidaa_cert.cer")
+#keyfile = os.path.join(script_directory, "./vidaa_cert.pkcs8")
 credentialsfile = os.path.join(script_directory, "credentials.json") 
 auth_numfile = "./authcode.txt"  # Temporary file to store the code
 check_interval = 0.1
