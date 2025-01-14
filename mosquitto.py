@@ -17,10 +17,13 @@ class Bridge(hisense.TVAuthenticator):
         lines = ["connection TV",
                  "cleansession true",
                  f"clientid {self.client_id}",
-                 "start_type automatic",
                  f"address {hisense.tv_ip}:36669",
                  f"remote_username {self.username}",
-                 f"remote_password {self.password}"]
+                 f"remote_password {self.password}",
+                 "bridge_insecure true",
+                 "start_type automatic",
+                 "try_private true",
+                 'topic /remoteapp/# both 0 <MQTT_PREFIX> ""']
         
         with open(bridgefile, 'w') as file:
             file.write("\n".join(lines))
