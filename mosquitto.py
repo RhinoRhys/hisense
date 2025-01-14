@@ -23,7 +23,7 @@ class Bridge(hisense.TVAuthenticator):
                  "bridge_insecure true",
                  "start_type automatic",
                  "try_private true",
-                 'topic /remoteapp/# both 0 <MQTT_PREFIX> ""']
+                 'topic /remoteapp/# both 0 hisense ""']
         
         with open(bridgefile, 'w') as file:
             file.write("\n".join(lines))
