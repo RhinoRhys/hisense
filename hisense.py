@@ -462,7 +462,7 @@ class TVAuthenticator:
                 if debug:
                     logging.error('Unable to generate credentials.')
                 raise
-
+        
     # Show the credentials
     def show_credentials(self):
         current_time = time.time()
@@ -786,7 +786,7 @@ if __name__ == "__main__":
     while action != "0":
         if not args.action:
             print("\nChoose an action:\n")
-            auth.show_help()
+            
             action = input("Action: ")
             # clear the screen
             os.system('cls' if os.name == 'nt' else 'clear')
